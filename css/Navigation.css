@@ -1,28 +1,50 @@
+@font-face {
+  font-family: 'Staatliches';
+  src: url(../resources/Staatliches-Regular.ttf);
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 /* Navigation Menu */
 .navbar{
   display: flex;
+  justify-content: space-between;
 }
 
 body {
+  background-color: #ccf4fa;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile_nav{
+  color: #e8985d;
+  font-size: 30px;
+  display: flex;
+}
+.profile_nav span{
+  padding: 10px;
+}
+
+.profile_nav span:hover{
+  cursor: pointer;
 }
 
 .category_nav{
   justify-content: flex-start;
-}
-.main_nav {
-  align-items: center;
-  justify-content: center;
+  justify-items: flex-start;
+  display: flex;
 }
 
 .main_nav a {
+  font-family: 'Staatliches';
   display: inline-block;
   color: black;
   text-align: center;
   padding: 14px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 22px;
   border-radius: 5px;
+  margin-right: 10px;
+  letter-spacing: 0.5px;
 }
 
 .main_nav a:hover {
@@ -31,7 +53,7 @@ body {
 }
 
 .main_nav a.active {
-  background-color: dodgerblue;
+  background-color: #e8985d;
   color: white;
 }
 
@@ -53,7 +75,7 @@ body {
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 15px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -68,9 +90,9 @@ body {
 .sidebar .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  right: 10px;
+  font-size: 20px;
+  margin-left: 20px;
 }
 
 /* The button used to open the sidebar */
@@ -81,6 +103,7 @@ body {
   color: white;
   padding: 10px 15px;
   border: none;
+  border-radius: 5px;
 }
 
 .openbtn:hover {
@@ -94,73 +117,55 @@ body {
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+@media screen and (max-width: 450px) {
+  .category_nav .openbtn{
+  font-size: 15px;
+  padding: 11px 13px;
+  }
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 12px;
+  }
+  .main_nav a{
+    padding: 14px;
+    font-size: 12px;
+  }
+  .profile_nav span{
+    font-size: 18px;
+  }
 }
 
-/* Flex and grid  */
-/* .row {
-  box-sizing: border-box;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex: 0 1 auto;
-  -webkit-box-flex: 0;
-  flex: 0 1 auto;
-  -ms-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -1rem;
-  margin-left: -1rem;
+/* search  */
+
+.searchTerm {
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
 }
 
-
-.start-xs {
-  -ms-flex-pack: start;
-  -webkit-box-pack: start;
-  justify-content: flex-start;
-  text-align: start;
+.searchTerm:focus{
+  color: #999;
 }
 
-.center-xs {
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  justify-content: center;
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
   text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
 }
 
-.end-xs {
-  -ms-flex-pack: end;
-  -webkit-box-pack: end;
-  justify-content: flex-end;
-  text-align: end;
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  transform: translate(-50%, -50%);
+  align-self: flex-end;
 }
-
-.col-xs {
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  flex-grow: 1;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  max-width: 100%;
-}
-
-.col-xs-1{
-  box-sizing: border-box;
-  -ms-flex: 0 0 auto;
-  -webkit-box-flex: 0;
-  flex: 0 0 auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-.col-xs-1 {
-  -ms-flex-preferred-size: 33.333%;
-  flex-basis: 33.333%;
-  max-width: 33.333%;
-} */

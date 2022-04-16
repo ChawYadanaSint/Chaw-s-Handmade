@@ -1,0 +1,145 @@
+/* section  */
+section{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.row{
+  content: "";
+  display: flex;
+}
+.slider_section {
+  min-height: 560px;
+  background: #e8985d;
+  position: relative;
+  padding-left: 10px;
+}
+
+.slider_section::after {
+ width: 54%;
+ position: absolute;
+ top: 0;
+ right: -370px;
+ content: "";
+ background: #ccf4fa;
+ display: block;
+ height: 100%;
+ transform: skew(50deg);
+}
+.slider_section::before {
+ width: 100%;
+ position: absolute;
+ bottom: 0;
+ right: 0px;
+ content: "";
+ background: #ccf4fa;
+ display: block;
+ height: 90px;
+}
+.slider_section .full {
+  position: relative;
+  z-index: 9;
+}
+
+.slider_section h1 {
+  font-size: 65px;
+  line-height: 65px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 25px;
+  padding-bottom: 0;
+  margin-top: 140px;
+}
+.slider_section h1 strong.cur {
+  font-size: 50px;
+  line-height: 50px;
+  color: #fff09c;
+  font-weight: 400;
+}
+.slider_section p {
+  color: #fff;
+  font-size: 17px;
+}
+
+
+.container {
+  position: relative;
+  z-index: 99;
+}
+
+.full {
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.text_align_center {
+  text-align: center !important;
+}
+
+
+.slide_img {
+  height: 470px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .slider_section h1 {
+    font-size: 40px;
+    line-height: 35px;
+    }
+
+    
+  .slide_img {
+    height: 470px;
+  }
+  
+}
+
+
+@media (min-width: 576px) and (max-width: 767px){
+
+  .slider_section::after {
+    display: none;
+  }
+  
+  .slider_section h1 {
+    margin-top: 50px;
+  }
+  .slider_section h1 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .slider_section h1 strong.cur {
+    font-size: 30px;
+  }
+  
+
+  .slide_img {
+    height: 470px;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .slider_section::after {
+    display: none;
+  }
+    
+  .slider_section h1 {
+    margin-top: 50px;
+  }
+  .slider_section h1 {
+    font-size: 50px;
+    line-height: 35px;
+  }
+  .slider_section h1 strong.cur {
+    font-size: 35px;
+  }
+  
+
+  .slide_img {
+    height: 470px;
+  }
+
+}

@@ -1,0 +1,126 @@
+/*   #c500d6
+     #24203b 
+  */
+
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,700;1,100&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .flip-container{
+    border: 2px solid transparent;
+    width: 250px;
+    height: 300px;
+    background-color:transparent;
+    border-radius: 10px;
+    perspective: 1000px;
+  }
+  
+  /* Flip Inner Container */
+  .flip-inner-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    
+  
+  }
+  /* add hover to Flip horizonally */
+  .flip-container:hover .flip-inner-container{
+    transform: rotateY(180deg);
+  }
+  
+  /* position front and back */
+  
+  .flip-front,
+  .flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* background-color: green; */
+    border-radius: 10px;
+    box-shadow: -1px 2px 13px 0px rgba(0,0,0, 0.75);
+  }
+  
+  /* flip  front from Start Here */
+  .flip-front{
+   background:#24203b  ;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  }
+  
+  .flip-front .profile-image{
+    background-image: url("../img/user.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;  
+    border-radius: 50%;
+    border: 4px solid #e8985d;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .flip-front h3{
+    margin-top: 5px;
+    
+  }
+  
+  .flip-front h6{
+    font-weight: 200;
+    margin: 5px 0;
+    text-transform: uppercase;
+  }
+  .flip-front h5{
+    text-transform: uppercase;
+    margin: 30px 0 5px 0;
+  }
+  
+  
+  /* flip back from Start Here */
+  .flip-back{
+    background: #e8985d;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flip-back h2{
+    margin-top: 100px;
+    color: white;
+  }
+  
+  .flip-back .btn{
+  display: block;
+  padding: 10px 20px;
+  background:  #ccf4fa;
+  text-decoration: none;
+  color: #24203b;
+  margin: 10px;
+  border-radius: 20px;
+  
+  }
+  
+  .flip-back .btn:hover{
+    background: #24203b;
+    border: 2px solid #24203b;
+    color: white;
+  }

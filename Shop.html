@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOP</title>
+  <link rel="stylesheet" href="css/Navigation.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="css/Footer.css">
+  <link rel="stylesheet" href="css/Shop.css"> 
+</head>
+<body>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Felt Handmade</a>
+    <a href="#">Resin</a>
+    <a href="#">Crochet</a>
+    <a href="#">Clay</a>
+    <a href="#">Embroidery</a>
+  </div>
+  
+  <div id="main" class="navbar">
+    <div class="category_nav">
+      <button class="openbtn" onclick="openNav()">
+        &#9776;
+      </button>
+      <img src="img/Logo_Orange.png" style="margin-left: 10px;width: 50px;height: 50px;" alt="">
+    </div>
+    <div class="main_nav">
+      <a href="Home.html">HOME</a>
+      <a href="About.html">ABOUT</a>
+      <a class="active" href="Shop.html">SHOP</a>
+    </div>
+    <div class="profile_nav">
+      <span class="lnr lnr-magnifier" style="font-size: 22px;" id="search"></span>      
+      <span class="lnr lnr-cart"></span>
+      <span class="lnr lnr-user"></span>
+    </div>
+  </div>
+  <div id = "Shop">
+    <!-- <h3>Felt Handmade</h3> -->
+    <div id="myBtnContainer">
+      <button class="btn activeFilter" id = 'all'> Show all</button>
+      <button class="btn" id = 'felt'> Felt</button>
+      <button class="btn" id = 'resin'> Resin</button>
+      <button class="btn" id = 'crochet'> Crochet</button>
+      <button class="btn" id = 'clay'> Clay</button>
+      <button class="btn" id = 'embroidery'>Embroidery</button>
+    </div>
+      <div class="shop_card">
+        <div class="hero-container" id="hero_container">
+        </div>
+      </div>
+    
+<!-- <div class="row" id="row"></div> -->
+<div class="card_holder" id="card_holder">
+<!-- 
+    <div class="container">
+      <div class="overlay">
+        <div class = "items"></div>
+        <div class = "items head">
+          <p>Flower Embroidery Hoop Art</p>
+          <hr>
+        </div>
+        <div class = "items price">
+          <p class="old">$699</p>
+          <p class="new">$345</p>
+        </div>
+        <div class="items cart">
+          <span>ADD TO CART</span>
+        </div>
+      </div>
+    </div>
+    </div> -->
+    
+  </div>
+
+  
+  
+  <footer class="footer">
+    <div class="footer__addr">
+      <img src="img/Logo_White.jpg" style="width: 200px;" alt="Logo">
+          
+      <h2>Furst Purchase & get 10% Off</h2>
+      <div style="display: flex; justify-content: left;">
+        <a class="footer__btn" href="#" style="margin-right: 10px;">Go To Cart</a>
+        <a class="footer__btn" href="Home.html">Explore</a>
+      </div>
+    </div>
+    
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">My Account</h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Profile</a>
+          </li>
+  
+          <li>
+            <a href="#">Account</a>
+          </li>
+              
+          <li>
+            <a href="#">Purchase</a>
+          </li>
+              
+          <li>
+            <a href="#">Credits</a>
+          </li>
+              
+          <li>
+            <a href="#">Preferences</a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav__title">Support</h2>
+        
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          
+          <li>
+            <a href="#">FAQs</a>
+          </li>
+          
+          <li>
+            <a href="#">Shipping</a>
+          </li>
+          
+          <li>
+            <a href="#">Returns</a>
+          </li>
+          
+          <li>
+            <a href="#">Terms</a>
+          </li>
+          
+          <li>
+            <a href="#">Privacy</a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item">
+        <h2 class="nav__title">Quick Links</h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Home</a>
+          </li>
+  
+          <li>
+            <a href="#">About</a>
+          </li>
+              
+          <li>
+            <a href="#">Shop</a>
+          </li>
+              
+          <li>
+            <a href="#">Profile</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    
+    <div class="legal">
+      <p>&copy; 2021 NaNa's Craft Store. All rights reserved.</p>
+      
+      <div class="legal__links">
+        <span>Made with <span class="heart">♥</span> from NaNa's Craft Store</span>
+      </div>
+    </div>
+  </footer>
+  <!-- <footer id="footer" class="footer"></footer> -->
+
+  <script type="text/javascript">
+    var main_navA3 = document.getElementById('main_navA3');
+        console.log(main_navA3);
+  </script>
+  <!-- <script src="js/Navigation.js"></script> -->
+  <!-- <script src="js/Footer.js"></script> -->
+  <script type="module" src="js/Shop.js"></script>
+</body>
+</html>

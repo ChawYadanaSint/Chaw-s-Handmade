@@ -1,0 +1,371 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+} */
+
+h1 { 
+  color: #e8985d;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: 40px;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff09c; 
+}
+/* 
+fieldset{
+  background-color: #efefef71;
+  border-radius: 20px;
+  border : 2px solid #e8985d;
+  padding: 20px;
+  margin : 50px;;
+}
+
+legend{
+  color: #fff;
+  background-color: #e8985d;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  margin: 60px 10px;
+}
+
+
+.hero-container {
+	margin: auto;
+	display: flex;
+  flex-wrap: wrap;
+}
+
+.main-container {
+	width: 270px;
+	height: 540px;
+	position: relative;
+	margin: 0 20px;
+}
+
+.poster-container {
+	width: 230px;
+	position: absolute;
+	top: 0;
+	left: 20px;
+	z-index: 9999;
+}
+.poster-container a img{
+  border-radius: 5px;
+}
+
+.poster {
+	width: 100%;
+	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+}
+
+.ticket-container {
+	background: #fff;
+	width: 270px;
+	height: 520px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 5px;
+	position: absolute;
+	top: 20px;
+	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+	opacity: 0;
+}
+
+.main-container:hover .ticket-container {
+	opacity: 1;
+	animation: bounceIn 0.6s linear;
+}
+
+@keyframes bounceIn {
+	0%,
+	20%,
+	40%,
+	60%,
+	80%,
+	to {
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	20% {
+		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+		transform: scale3d(1.03, 1.03, 1.03);
+	}
+	40% {
+		-webkit-transform: scale3d(0.9, 0.9, 0.9);
+		transform: scale3d(0.9, 0.9, 0.9);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: scale3d(1.01, 1.01, 1.01);
+		transform: scale3d(1.01, 1.01, 1.01);
+	}
+	80% {
+		-webkit-transform: scale3d(0.97, 0.97, 0.97);
+		transform: scale3d(0.97, 0.97, 0.97);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: scaleX(1);
+		transform: scaleX(1);
+	}
+} */
+
+/* @keyframes bounce {
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+} */
+
+/* .ticket__content {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+
+.ticket__movie-title {
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.ticket__movie-slogan {
+	color: #999;
+	font-size: 0.9rem;
+	margin-bottom: 20px;
+}
+
+.ticket__current-price {
+	color: #69c982;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.ticket__old-price {
+	color: #999;
+	text-decoration: line-through;
+	margin-bottom: 10px;
+}
+
+.ticket__buy-btn {
+	cursor: pointer;
+	width: 100%;
+	background: #2f2f2f;
+	color: white;
+	padding: 15px 0;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+} */
+body {
+  background-color: #FEF5DF;
+}
+
+.card_holder{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 280px;
+  height: 360px;
+  top:0; right: 0; left: 0; bottom: 0;
+  background-size: cover;
+  cursor: pointer;
+  
+  -webkit-box-shadow: 0 0 5px #000;
+        box-shadow: 0 0 5px #000;
+  }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  
+  display: grid;
+  
+  background: rgba(77, 77, 77, .9);
+  color: #FEF5DF;
+  opacity: 0;
+  transition: all 0.5s;
+  
+  font-family: 'Playfair Display', serif;
+}
+
+
+.items {
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+
+.head {
+  font-size: 30px;
+  line-height: 40px;
+  
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+
+
+.head hr {
+  display: block;
+  width: 0;
+  
+  border: none;
+  border-bottom: solid 2px #FEF5DF;
+  bottom: 0; left:20px;
+  
+  transition: all .5s;
+}
+
+.price {
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: bold;  
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+
+.price .old {
+  text-decoration: line-through;
+  color: lighten(rgb(77, 77, 77),40%);
+}
+
+.cart {
+  font-size: 12px;
+  opacity: 0;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+
+.cart i {
+  font-size: 16px;
+}
+.cart span {
+  margin-left: 10px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.container:hover .overlay .head {
+  transform: translateY(0px);
+}
+
+.container:hover .overlay hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+
+.container:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+
+.container:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+
+
+
+/* filter  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+	margin:11px;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.activeFilter {
+  background-color: #666;
+   color: white;
+}
